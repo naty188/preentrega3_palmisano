@@ -14,24 +14,29 @@ $image-height: 400px; // Altura fija para las imágenes
 }
 
 // Mixin para animaciones
-@mixin bounceIn {
-  animation: bounceIn 0.5s forwards;
+@mixin bounce-in {
+  animation: bounce-in 0.5s forwards;
+}
+
+@mixin puff-in-center {
+  animation: puff-in-center 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 // Animación de rebote
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes bounce-in {
+  0% { transform: translateY(-500px); opacity: 0; }
+  38% { transform: translateY(0); opacity: 1; }
+  55% { transform: translateY(-65px); }
+  72%, 90%, 100% { transform: translateY(0); }
+  81% { transform: translateY(-28px); }
+  95% { transform: translateY(-8px); }
 }
+
+@keyframes puff-in-center {
+  0% { transform: scale(2); filter: blur(4px); opacity: 0; }
+  100% { transform: scale(1); filter: blur(0); opacity: 1; }
+}
+
 
 // Estilos globales
 * {
@@ -41,7 +46,7 @@ $image-height: 400px; // Altura fija para las imágenes
   font-family: "Lobster", sans-serif;
 }
 
-*::-moz-selection,
+
 *::selection {
   color: $primary-color;
 }
@@ -61,7 +66,7 @@ header {
 
   .navbar {
     display: flex;
-    animation: bounce-in 0.5s;
+    
 
     a {
       display: block;
@@ -72,6 +77,7 @@ header {
       border: 3px solid #fff;
       margin: 5px;
       @include transition(background-color);
+      @include puff-in-center;
 
       &:hover {
         background-color: $primary-color;
@@ -102,6 +108,7 @@ main {
     .logo {
         width: 100px; // Ajusta el tamaño del logo según sea necesario
         height: auto; // Mantiene la proporción del logo
+        animation: bounce-in 0.5s;
     }
 }
 

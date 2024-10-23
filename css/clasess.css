@@ -8,9 +8,8 @@
   font-weight: 400;
 }
 
-::selection,
-::-moz-selection {
-  color: rgba(12, 79, 95, 0.705);
+*::selection{
+  color: #0c4f5fb4;
 }
 
 @keyframes bounce-in-top {

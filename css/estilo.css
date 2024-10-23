@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes bounce-in {
+  0% { transform: translateY(-500px); opacity: 0; }
+  38% { transform: translateY(0); opacity: 1; }
+  55% { transform: translateY(-65px); }
+  72%, 90%, 100% { transform: translateY(0); }
+  81% { transform: translateY(-28px); }
+  95% { transform: translateY(-8px); }
 }
+
+@keyframes puff-in-center {
+  0% { transform: scale(2); filter: blur(4px); opacity: 0; }
+  100% { transform: scale(1); filter: blur(0); opacity: 1; }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@
   font-family: "Lobster", sans-serif;
 }
 
-*::-moz-selection,
+
 *::selection {
   color: rgba(12, 79, 95, 0.705);
 }
@@ -34,10 +35,11 @@ header {
 header .logo {
   width: 100px;
   margin-top: 10px;
+  animation: bounce-in 0.5s;
 }
 header .navbar {
   display: flex;
-  animation: bounce-in 0.5s;
+ 
 }
 header .navbar a {
   display: block;
@@ -48,6 +50,7 @@ header .navbar a {
   border: 3px solid #fff;
   margin: 5px;
   transition: background-color 0.3s ease;
+  animation: puff-in-center 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 header .navbar a:hover {
   background-color: rgba(12, 79, 95, 0.705);
@@ -64,16 +67,18 @@ main h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  animation: bounceIn 0.5s forwards;
+  animation: bounce-in 0.5s forwards;
 }
 main .logo-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+ 
 }
 main .logo-container .logo {
   width: 100px;
   height: auto;
+  
 }
 main .contenedor {
   display: flex;
