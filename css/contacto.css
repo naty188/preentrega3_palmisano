@@ -315,6 +315,11 @@ h4 {
     width: 90px;
   }
 
+  main{
+    background-size: 25%;
+    
+  }
+
   .boton__formulario {
     width: 50vw;
     height: 10vh;
