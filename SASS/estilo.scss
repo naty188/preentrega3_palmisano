@@ -14,8 +14,8 @@ $image-height: 400px; // Altura fija para las imágenes
 }
 
 // Mixin para animaciones
-@mixin bounce-in {
-  animation: bounce-in 0.5s forwards;
+@mixin bounce-in-top {
+  animation: bounce-in-top 1.8s ;
 }
 
 @mixin puff-in-center {
@@ -23,7 +23,7 @@ $image-height: 400px; // Altura fija para las imágenes
 }
 
 // Animación de rebote
-@keyframes bounce-in {
+@keyframes bounce-in-top {
   0% { transform: translateY(-500px); opacity: 0; }
   38% { transform: translateY(0); opacity: 1; }
   55% { transform: translateY(-65px); }
@@ -62,7 +62,10 @@ header {
   .logo {
     width: 100px;
     margin-top: 10px;
+    @include bounce-in-top;
+    animation-delay: 1.6s;
   }
+  
 
   .navbar {
     display: flex;
@@ -98,17 +101,17 @@ main {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    @include bounce-in;
+   
   }
-  .logo-container {
+  .logof-container {
     display: flex;
     justify-content: center; // Centra el logo
     margin-top: 20px; // Espacio entre el título y el logo
 
-    .logo {
+    .logof {
         width: 100px; // Ajusta el tamaño del logo según sea necesario
         height: auto; // Mantiene la proporción del logo
-        animation: bounce-in 0.5s;
+        
     }
 }
 

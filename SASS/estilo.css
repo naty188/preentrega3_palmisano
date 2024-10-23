@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@keyframes bounce-in {
+@keyframes bounce-in-top {
   0% {
     transform: translateY(-500px);
     opacity: 0;
@@ -58,6 +58,8 @@ header {
 header .logo {
   width: 100px;
   margin-top: 10px;
+  animation: bounce-in-top 1.8s;
+  animation-delay: 1.6s;
 }
 header .navbar {
   display: flex;
@@ -88,17 +90,15 @@ main h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  animation: bounce-in 0.5s forwards;
 }
-main .logo-container {
+main .logof-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-main .logo-container .logo {
+main .logof-container .logof {
   width: 100px;
   height: auto;
-  animation: bounce-in 0.5s;
 }
 main .contenedor {
   display: flex;

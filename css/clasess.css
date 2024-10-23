@@ -45,7 +45,7 @@ header {
   margin-top: 10px;
   padding-block-end: 8px;
   margin-left: 10px;
-  animation: bounce-in-top 1.8s both;
+  animation: bounce-in-top 1.8s;
   animation-delay: 1.6s;
 }
 
