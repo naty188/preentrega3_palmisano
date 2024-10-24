@@ -147,20 +147,57 @@ main {
         }
 
         .carousel-caption {
+          
+          & d-none d-md-block-1 {
           background-color: rgba(0, 0, 0, 0.5);
           border-radius: 5px;
           text-align: center;
-          padding-bottom: 13%;
+          padding-bottom: 20px;
+          
 
-          h2 {
+           h2 {
             color: $secondary-color;
             font-size: 1.5rem;
-            padding-bottom: 5%;
             text-align: center;
+           
           }
         }
+
+          & d-none d-md-block-2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            text-align: center;
+            padding-bottom: 30%;
+
+            h2 {
+              color: $secondary-color;
+              font-size: 1.5rem;
+              text-align: center;
+             
+            }
+          }
+          
+           
+          & d-none d-md-block-3 {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            text-align: center;
+            padding-bottom: 80px;
+         
+
+           h2 {
+            color: $secondary-color;
+            font-size: 1.5rem;
+            text-align: center;
+           }
+        
+          }
+         
+        }
+
       }
     }
+  }
 
     p {
       font-size: 1.1rem;
@@ -188,7 +225,7 @@ main {
       }
     }
   }
-}
+
 
 // Estilos para el footer
 footer {

@@ -127,29 +127,51 @@ main .contenedor #galeria .carousel .carousel-inner img {
 main .contenedor #galeria .carousel .carousel-inner img:hover {
   transform: scale(1.05);
 }
-main .contenedor #galeria .carousel .carousel-caption {
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-1 {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   text-align: center;
-  padding-bottom: 13%;
+  padding-bottom: 20px;
 }
-main .contenedor #galeria .carousel .carousel-caption h2 {
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-1 h2 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding-bottom: 5%;
   text-align: center;
 }
-main .contenedor p {
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 30%;
+}
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-2 h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+main .contenedor #galeria .carousel .carousel-caption d-none d-md-block-3 h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  text-align: center;
+}
+main p {
   font-size: 1.1rem;
   margin: 20px;
   text-align: center;
   color: #000000;
 }
-main .video {
+
+.video {
   text-align: center;
   margin: 30px 0;
 }
-main .video iframe {
+.video iframe {
   width: 90%;
   max-width: 800px;
   height: 400px;
@@ -157,7 +179,7 @@ main .video iframe {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-main .video iframe:hover {
+.video iframe:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
