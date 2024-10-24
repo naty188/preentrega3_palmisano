@@ -62,7 +62,7 @@ header {
   color: beige;
   font-size: 100%;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 12px 11px;
   border: 3px solid beige;
   margin: 5px 5px;
   transition: all 0.3s;
@@ -88,7 +88,12 @@ footer .btn {
   font-size: 22px;
   text-decoration: none;
   margin: 8px 5px;
+  padding: 5px 10px;
   background-color: rgb(235, 235, 232);
+}
+
+footer h5{
+  font-size: 17px;
 }
 
 footer .btn:hover {
@@ -100,13 +105,21 @@ footer .btn img {
   height: 25px;
 }
 
+footer h6{
+  font-size: 20px;
+}
+
+footer h7{
+  font-size: 20px;
+}
+
 footer .contenedor-redes-sociales {
   margin: 10px;
 }
 
 footer .contenedor-redes-sociales .icono-red-social {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 footer .contenedor-redes-sociales .icono-red-social:hover {

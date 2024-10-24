@@ -111,12 +111,14 @@ main .contenedor #galeria .carousel .carousel-inner img:hover {
 main .contenedor #galeria .carousel .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  padding: 10px;
   text-align: center;
+  padding-bottom: 13%;
 }
 main .contenedor #galeria .carousel .carousel-caption h2 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
+  padding-bottom: 5%;
+  text-align: center;
 }
 main .contenedor p {
   font-size: 1.1rem;
@@ -160,6 +162,11 @@ footer .btn {
   padding: 5px 10px;
   transition: background-color 0.3s ease;
 }
+
+footer .btn h4{
+  font-size: 17px;
+}
+
 footer .btn:hover {
   background-color: rgba(12, 79, 95, 0.705);
 }
@@ -168,6 +175,15 @@ footer .btn img {
   width: 25px;
   height: 25px;
 }
+
+footer h3{
+  font-size: 20px;
+}
+
+footer h5{
+  font-size: 20px;
+}
+
 footer .contenedor-redes-sociales {
   margin: 10px 0;
 }

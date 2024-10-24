@@ -42,7 +42,7 @@ header {
   display: flex;
   margin-right: 10px;
   padding-right: 10px;
-  height: 60px;
+  height: 64px;
   margin-top: 10px;
 }
 
@@ -51,9 +51,9 @@ header {
   color: beige;
   font-size: 100%;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 12px 11px;
   border: 3px solid beige;
-  margin: 5px 5px;
+  margin: 8px 5px;
   transition: all 0.3s;
   animation: puff-in-center 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
@@ -235,15 +235,15 @@ h1 {
 
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   display: block;
 }
 
 h3 {
-  font-size: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  font-size: 19px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 6px;
 }
 
 .btn {
@@ -255,7 +255,8 @@ h3 {
   border-radius: 10px;
   font-size: 22px;
   text-decoration: none;
-  margin: 15px 5px;
+  margin: 15px 15px;
+  padding: 5px 10px;
   background-color: rgb(235, 235, 232);
   padding-block-end: 0;
 }
@@ -275,14 +276,14 @@ h3 {
 }
 
 .contenedor-redes-sociales {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px 0;
+ 
   
 }
 
 .icono-red-social {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .icono-red-social:hover {
   background-color: beige;
@@ -449,16 +450,16 @@ h3 {
 
   h1 {
     display: flex;
-    font-size: 12px;
+    font-size: 20px;
     
   }
 
   h2 {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .icono-red-social {
