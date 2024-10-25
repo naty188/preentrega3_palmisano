@@ -317,7 +317,9 @@ h4 {
   }
 
   main{
-    background-size: 25%;
+    background-size: 60%;
+    background-position: 40%;
+    background-position: bottom ;
     
   }
 
